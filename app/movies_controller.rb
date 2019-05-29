@@ -69,7 +69,7 @@ def can_be_found_updated_and_saved
   Movie.create(title: "Awesome Flick")
   found_movie = Movie.find_by(title: "AwesomeFlick")
   found_movie.title = "Even Awesomer Flick"
-
+  found_movie.save
   __
   __
 end
